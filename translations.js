@@ -32,7 +32,8 @@ const translations = {
       "07. Données & Preuves Sortie MVP",
       "08. Écosystème Institutionnel & Synergies",
       "09. Éthique, Risques & Limites",
-      "10. Feuille de Route & Vision Régionale"
+      "10. Feuille de Route & Vision Régionale",
+      "11. L'Équipe & Direction Projet"
     ],
 
     // Slide 1
@@ -209,7 +210,38 @@ const translations = {
     s10_t3_p: "Déploiement du modèle aux pays voisins partageant les couloirs de traite (Mali, Guinée, Gambie, Niger) avec adaptation aux corpus légaux nationaux respectifs.",
     s10_t3_kpi: "Cible : Observatoire régional de la traite",
     s10_pledge_title: "L'Appel de Vienne 2026 :",
-    s10_pledge_p: `« En réunissant la technologie souveraine, le droit et la dignité humaine, XAM TE AAR démontre que l'Afrique innove pour protéger ses enfants et ses citoyens. Avec votre soutien, faisons de ce sanctuaire numérique un standard mondial de protection. »`
+    s10_pledge_p: `« En réunissant la technologie souveraine, le droit et la dignité humaine, XAM TE AAR démontre que l'Afrique innove pour protéger ses enfants et ses citoyens. Avec votre soutien, faisons de ce sanctuaire numérique un standard mondial de protection. »`,
+
+    // Slide 11: L'Équipe
+    s11_tag: "10. Capital Humain & Ingénierie",
+    s11_title: "L'Équipe Projet : L'Expertise au Service de l'Impact",
+    s11_lead: "Une équipe pluridisciplinaire sénégalaise engagée, combinant vision stratégique, haute ingénierie logicielle, DevOps souverain et déploiement de proximité.",
+    s11_m1_badge: "Direction",
+    s11_m1_role: "Directeur Général, Mbarodi.AI",
+    s11_m1_bio: "Pilotage stratégique, gouvernance institutionnelle et coordination des partenariats de haut niveau (UNODC, ministères, organisations internationales).",
+    s11_m1_sk1: "Stratégie & Vision",
+    s11_m1_sk2: "Gouvernance IA",
+    s11_m1_sk3: "Plaidoyer International",
+    s11_m2_badge: "Technologie",
+    s11_m2_role: "Chief Technology Officer (CTO)",
+    s11_m2_bio: "Architecture logicielle de bout en bout, conception des protocoles d'inviolabilité et d'anonymat, intégration de l'IA éthique et conformité CDP.",
+    s11_m2_sk1: "Architecture Système",
+    s11_m2_sk2: "Sécurité & Chiffrement",
+    s11_m2_sk3: "IA Responsable",
+    s11_m3_badge: "Impact & Terrain",
+    s11_m3_role: "Responsable Commerciale",
+    s11_m3_bio: "Déploiement commercial et partenariats opérationnels, relations avec les ONG et la société civile, et stratégie d'adoption auprès des usagers.",
+    s11_m3_sk1: "Partenariats ONG",
+    s11_m3_sk2: "Déploiement Opérationnel",
+    s11_m3_sk3: "Engagement Terrain",
+    s11_m4_badge: "Infrastructure",
+    s11_m4_role: "DevOps & Infrastructure",
+    s11_m4_bio: "Haute disponibilité et résilience 24/7, architecture cloud souveraine, pipelines d'intégration continue CI/CD et surveillance proactive.",
+    s11_m4_sk1: "Cloud Souverain",
+    s11_m4_sk2: "CI/CD Automatisé",
+    s11_m4_sk3: "Haute Disponibilité",
+    s11_footer_org: "Mbarodi.AI & Projet XAM TE AAR",
+    s11_footer_sub: "Pôle d'Ingénierie & d'Intelligence Artificielle • Dakar, Sénégal"
   },
 
   en: {
@@ -240,7 +272,8 @@ const translations = {
       "07. Field Data & MVP Outcomes",
       "08. Institutional Ecosystem & Synergies",
       "09. Ethics, Risks & Boundaries",
-      "10. Roadmap & Regional Vision"
+      "10. Roadmap & Regional Vision",
+      "11. Team, Leadership & Engineering"
     ],
 
     // Slide 1
@@ -417,6 +450,37 @@ const translations = {
     s10_t3_p: "Replicating the framework across corridor nations (Mali, Guinea, The Gambia, Niger) adapted to their respective domestic criminal codes.",
     s10_t3_kpi: "Target: Regional anti-trafficking early warning observatory",
     s10_pledge_title: "The Vienna 2026 Call to Action:",
-    s10_pledge_p: `“By uniting sovereign technology, the rule of law, and human dignity, XAM TE AAR proves that Africa is innovating to protect its children and citizens. With your partnership, let us make this digital sanctuary a global standard of protection.”`
+    s10_pledge_p: `“By uniting sovereign technology, the rule of law, and human dignity, XAM TE AAR proves that Africa is innovating to protect its children and citizens. With your partnership, let us make this digital sanctuary a global standard of protection.”`,
+
+    // Slide 11: Team
+    s11_tag: "10. Human Capital & Engineering",
+    s11_title: "The Project Team: Engineering in Service of Impact",
+    s11_lead: "A committed Senegalese multidisciplinary team combining strategic leadership, high-grade software engineering, sovereign DevOps, and grassroots deployment.",
+    s11_m1_badge: "Leadership",
+    s11_m1_role: "Chief Executive Officer (CEO), Mbarodi.AI",
+    s11_m1_bio: "Strategic leadership, institutional governance, and coordination of high-level multilateral partnerships (UNODC, ministries, international organizations).",
+    s11_m1_sk1: "Strategy & Vision",
+    s11_m1_sk2: "AI Governance",
+    s11_m1_sk3: "International Advocacy",
+    s11_m2_badge: "Technology",
+    s11_m2_role: "Chief Technology Officer (CTO)",
+    s11_m2_bio: "End-to-end software architecture, design of inviolable anonymity protocols, ethical AI integration, and regulatory data compliance.",
+    s11_m2_sk1: "System Architecture",
+    s11_m2_sk2: "Security & Encryption",
+    s11_m2_sk3: "Responsible AI",
+    s11_m3_badge: "Impact & Field",
+    s11_m3_role: "Head of Business Development & Partnerships",
+    s11_m3_bio: "Operational partnerships and commercial rollout, civil society & NGO relations, and grassroots adoption strategy for vulnerable communities.",
+    s11_m3_sk1: "NGO Partnerships",
+    s11_m3_sk2: "Field Rollout",
+    s11_m3_sk3: "Community Engagement",
+    s11_m4_badge: "Infrastructure",
+    s11_m4_role: "DevOps & Infrastructure",
+    s11_m4_bio: "24/7 high availability & resilience, sovereign cloud architecture, automated CI/CD deployment pipelines, and proactive threat monitoring.",
+    s11_m4_sk1: "Sovereign Cloud",
+    s11_m4_sk2: "Automated CI/CD",
+    s11_m4_sk3: "High Availability",
+    s11_footer_org: "Mbarodi.AI & XAM TE AAR Initiative",
+    s11_footer_sub: "AI Engineering & Social Impact Hub • Dakar, Senegal"
   }
 };
