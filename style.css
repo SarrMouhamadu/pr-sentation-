@@ -1078,6 +1078,224 @@ body {
 }
 
 /* ========================================================
+   SLIDE 11: L'ÉQUIPE PROJET & DIRECTION
+   ======================================================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.team-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+  box-shadow: var(--shadow-subtle);
+}
+
+.team-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 18px 40px var(--glow-primary);
+}
+
+.team-card.highlight-card {
+  border-color: rgba(43, 153, 199, 0.3);
+}
+
+.team-photo-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(43, 153, 199, 0.08) 0%, rgba(17, 35, 56, 0.25) 100%);
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.team-card:hover .team-photo {
+  transform: scale(1.06);
+}
+
+.team-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-badge.badge-primary {
+  background: rgba(43, 153, 199, 0.92);
+  color: #ffffff;
+}
+
+.team-badge.badge-accent {
+  background: rgba(224, 139, 78, 0.92);
+  color: #ffffff;
+}
+
+.team-badge.badge-secondary {
+  background: rgba(76, 157, 189, 0.92);
+  color: #ffffff;
+}
+
+.team-badge.badge-teal {
+  background: rgba(38, 166, 154, 0.92);
+  color: #ffffff;
+}
+
+.team-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.team-name {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.team-role {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--primary);
+  margin-top: -2px;
+}
+
+.team-bio {
+  font-size: 0.88rem;
+  color: var(--text-color);
+  line-height: 1.55;
+  margin: 6px 0;
+  flex-grow: 1;
+  opacity: 0.92;
+}
+
+.team-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.skill-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: rgba(43, 153, 199, 0.1);
+  color: var(--text-color);
+  border: 1px solid rgba(43, 153, 199, 0.18);
+}
+
+.team-footer-strip {
+  margin-top: 26px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.footer-org {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.org-logo {
+  height: 44px;
+  width: auto;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px;
+}
+
+.org-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.org-info strong {
+  font-size: 0.98rem;
+  color: var(--heading-color);
+}
+
+.org-info span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--hover-bg);
+  border: 1px solid var(--card-border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  color: var(--heading-color);
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-footer-strip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ========================================================
    FLOATING VERTICAL SIDE NAVIGATION DOCK
    ======================================================== */
 .side-nav-dock {
@@ -1413,7 +1631,8 @@ body {
 .slide.in-view .result-card:nth-child(1),
 .slide.in-view .partner-column:nth-child(1),
 .slide.in-view .risk-card:nth-child(1),
-.slide.in-view .timeline-step:nth-child(1) { transition-delay: 0.12s; }
+.slide.in-view .timeline-step:nth-child(1),
+.slide.in-view .team-card:nth-child(1) { transition-delay: 0.12s; }
 
 .slide.in-view .stat-card:nth-child(2),
 .slide.in-view .feature-card:nth-child(2),
@@ -1424,7 +1643,8 @@ body {
 .slide.in-view .result-card:nth-child(2),
 .slide.in-view .partner-column:nth-child(2),
 .slide.in-view .risk-card:nth-child(2),
-.slide.in-view .timeline-step:nth-child(2) { transition-delay: 0.22s; }
+.slide.in-view .timeline-step:nth-child(2),
+.slide.in-view .team-card:nth-child(2) { transition-delay: 0.22s; }
 
 .slide.in-view .stat-card:nth-child(3),
 .slide.in-view .feature-card:nth-child(3),
@@ -1435,19 +1655,22 @@ body {
 .slide.in-view .result-card:nth-child(3),
 .slide.in-view .partner-column:nth-child(3),
 .slide.in-view .risk-card:nth-child(3),
-.slide.in-view .timeline-step:nth-child(3) { transition-delay: 0.32s; }
+.slide.in-view .timeline-step:nth-child(3),
+.slide.in-view .team-card:nth-child(3) { transition-delay: 0.32s; }
 
 .slide.in-view .stat-card:nth-child(4),
 .slide.in-view .barrier-item:nth-child(4),
 .slide.in-view .pillar-box:nth-child(4),
 .slide.in-view .sec-col:last-child .sec-item:nth-child(2),
-.slide.in-view .risk-card:nth-child(4) { transition-delay: 0.42s; }
+.slide.in-view .risk-card:nth-child(4),
+.slide.in-view .team-card:nth-child(4) { transition-delay: 0.42s; }
 
 .slide.in-view .dignity-banner,
 .slide.in-view .quote-callout,
 .slide.in-view .pwa-highlight,
 .slide.in-view .lessons-learned-box,
-.slide.in-view .final-pledge { transition-delay: 0.36s; }
+.slide.in-view .final-pledge,
+.slide.in-view .team-footer-strip { transition-delay: 0.36s; }
 
 /* 3. Subtle Interactive Hover Lifts */
 .stat-card,
@@ -1457,7 +1680,8 @@ body {
 .result-card,
 .partner-column,
 .risk-card,
-.timeline-step {
+.timeline-step,
+.team-card {
   transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -1468,7 +1692,8 @@ body {
 .result-card:hover,
 .partner-column:hover,
 .risk-card:hover,
-.timeline-step:hover {
+.timeline-step:hover,
+.team-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 36px var(--glow-primary);
   border-color: var(--primary);

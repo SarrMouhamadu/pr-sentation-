@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
       "07. Données & Preuves Sortie MVP",
       "08. Écosystème Institutionnel & Synergies",
       "09. Éthique, Risques & Limites",
-      "10. Feuille de Route & Vision Régionale"
+      "10. Feuille de Route & Vision Régionale",
+      "11. L'Équipe & Direction Projet"
     ];
   }
 

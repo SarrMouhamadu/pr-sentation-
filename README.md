@@ -21,7 +21,7 @@ La présentation intègre nativement un sélecteur de langue **Français / Angla
 
 ---
 
-## 🎯 Contenu des 10 Slides
+## 🎯 Contenu des 11 Slides
 
 1. **01. Couverture & Cérémonial UNTOC** / Cover & UNTOC Ceremonial
 2. **02. Ancrage Territorial & Sénégal** / Territorial Roots & Realities in Senegal
@@ -33,6 +33,7 @@ La présentation intègre nativement un sélecteur de langue **Français / Angla
 8. **08. Écosystème Institutionnel & Synergies** / Partner Ecosystem & Governance
 9. **09. Éthique, Risques & Limites** / Risk Management & Operational Boundaries
 10. **10. Feuille de Route & Vision Régionale** / Roadmap & Regional ECOWAS Shield
+11. **11. L'Équipe Projet & Direction** / Core Team, Leadership & Engineering
 
 ---
 
