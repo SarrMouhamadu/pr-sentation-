@@ -1,12 +1,15 @@
 // ========================================================
 // PRESENTATION ENGINE — XAM TE AAR / UNTOC 2026
-// MOTEUR DE DÉFILEMENT VERTICAL (VERTICAL SCROLL STORYTELLING)
+// MOTEUR DE DÉFILEMENT VERTICAL & GESTION MULTILINGUE (FR / EN)
 // ========================================================
 
 document.addEventListener('DOMContentLoaded', () => {
   const slides = Array.from(document.querySelectorAll('.slide'));
   const totalSlides = slides.length;
   let currentSlideIndex = 0;
+
+  // Language State
+  let currentLang = localStorage.getItem('untoc_deck_lang') || 'fr';
 
   // DOM Elements
   const currentNumEl = document.getElementById('currentSlideNum');
@@ -16,51 +19,68 @@ document.addEventListener('DOMContentLoaded', () => {
   const nextBtn = document.getElementById('nextBtn');
   const sideNavDock = document.getElementById('sideNavDock');
   const themeToggle = document.getElementById('themeToggle');
+  const fullscreenToggle = document.getElementById('fullscreenToggle');
   const overviewToggle = document.getElementById('overviewToggle');
+  const langToggle = document.getElementById('langToggle');
+  const langLabel = document.getElementById('langLabel');
   const overviewModal = document.getElementById('overviewModal');
   const overviewBackdrop = document.getElementById('overviewBackdrop');
   const closeOverview = document.getElementById('closeOverview');
   const overviewGrid = document.getElementById('overviewGrid');
   const heroScrollDown = document.getElementById('heroScrollDown');
 
-  // Slide Titles for Overview & Tooltips
-  const slideTitles = [
-    "01. Couverture & Cérémonial UNTOC",
-    "02. Ancrage Territorial & Sénégal",
-    "03. Problématique & Verrous Terrain",
-    "04. Les 4 Piliers XAM TE AAR",
-    "05. Sécurité & Inviolabilité des Données",
-    "06. IA Gemini & Triage d'Urgence",
-    "07. Données & Preuves Sortie MVP",
-    "08. Écosystème Institutionnel & Synergies",
-    "09. Éthique, Risques & Limites",
-    "10. Feuille de Route & Vision Régionale"
-  ];
-
   if (totalNumEl) {
     totalNumEl.textContent = String(totalSlides).padStart(2, '0');
   }
 
-  // Build Vertical Side Navigation Dock
-  if (sideNavDock) {
+  // Helper to get active slide titles
+  function getSlideTitles() {
+    if (typeof translations !== 'undefined' && translations[currentLang] && translations[currentLang].slideTitles) {
+      return translations[currentLang].slideTitles;
+    }
+    return [
+      "01. Couverture & Cérémonial UNTOC",
+      "02. Ancrage Territorial & Sénégal",
+      "03. Problématique & Verrous Terrain",
+      "04. Les 4 Piliers XAM TE AAR",
+      "05. Sécurité & Inviolabilité des Données",
+      "06. IA Gemini & Triage d'Urgence",
+      "07. Données & Preuves Sortie MVP",
+      "08. Écosystème Institutionnel & Synergies",
+      "09. Éthique, Risques & Limites",
+      "10. Feuille de Route & Vision Régionale"
+    ];
+  }
+
+  // Build / Re-render Vertical Side Navigation Dock
+  function renderSideNavDock() {
+    if (!sideNavDock) return;
+    sideNavDock.innerHTML = '';
+    const titles = getSlideTitles();
+
     slides.forEach((_, idx) => {
       const dot = document.createElement('div');
-      dot.className = `side-dot ${idx === 0 ? 'active' : ''}`;
+      dot.className = `side-dot ${idx === currentSlideIndex ? 'active' : ''}`;
       dot.setAttribute('data-target', idx);
-      dot.innerHTML = `<span class="side-tooltip">${slideTitles[idx]}</span>`;
+      dot.innerHTML = `<span class="side-tooltip">${titles[idx] || `Section ${idx + 1}`}</span>`;
       dot.addEventListener('click', () => scrollToSlide(idx));
       sideNavDock.appendChild(dot);
     });
   }
 
-  // Build Overview Grid Modal
-  if (overviewGrid) {
+  // Build / Re-render Overview Grid Modal
+  function renderOverviewGrid() {
+    if (!overviewGrid) return;
+    overviewGrid.innerHTML = '';
+    const titles = getSlideTitles();
+    const prefix = (translations[currentLang] && translations[currentLang].sectionPrefix) || 'Section';
+
     slides.forEach((_, idx) => {
       const thumb = document.createElement('div');
-      thumb.className = `thumb-card ${idx === 0 ? 'active' : ''}`;
+      thumb.className = `thumb-card ${idx === currentSlideIndex ? 'active' : ''}`;
       thumb.innerHTML = `
-        <div class="thumb-num">Section ${String(idx + 1).padStart(2, '0')}</div>
-        <div class="thumb-title">${slideTitles[idx]}</div>
+        <div class="thumb-num">${prefix} ${String(idx + 1).padStart(2, '0')}</div>
+        <div class="thumb-title">${titles[idx] || `${prefix} ${idx + 1}`}</div>
       `;
       thumb.addEventListener('click', () => {
         scrollToSlide(idx);
@@ -68,6 +88,63 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       overviewGrid.appendChild(thumb);
     });
+  }
+
+  // Apply Language to all data-i18n elements
+  function setLanguage(lang) {
+    if (typeof translations === 'undefined' || !translations[lang]) return;
+    currentLang = lang;
+    localStorage.setItem('untoc_deck_lang', lang);
+    document.documentElement.lang = lang;
+
+    const dict = translations[lang];
+
+    // Update all elements with data-i18n
+    const translatableElements = document.querySelectorAll('[data-i18n]');
+    translatableElements.forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key] !== undefined) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    // Update button titles and labels
+    if (langLabel) {
+      langLabel.textContent = lang === 'fr' ? 'EN' : 'FR';
+    }
+
+    if (langToggle) {
+      langToggle.title = dict.langToggleTitle || (lang === 'fr' ? 'Passer en Anglais (Touche L)' : 'Switch to French (Key L)');
+    }
+    if (themeToggle) {
+      themeToggle.title = dict.themeTitle || '';
+    }
+    if (fullscreenToggle) {
+      fullscreenToggle.title = dict.fullscreenTitle || '';
+    }
+    if (overviewToggle) {
+      overviewToggle.title = dict.overviewTitle || '';
+    }
+    if (prevBtn) {
+      prevBtn.title = lang === 'fr' ? 'Section précédente (↑)' : 'Previous section (↑)';
+    }
+    if (nextBtn) {
+      nextBtn.title = lang === 'fr' ? 'Section suivante (↓)' : 'Next section (↓)';
+    }
+
+    // Refresh dock and overview modal text
+    renderSideNavDock();
+    renderOverviewGrid();
+  }
+
+  // Toggle Language between FR and EN
+  function toggleLanguage() {
+    const nextLang = currentLang === 'fr' ? 'en' : 'fr';
+    setLanguage(nextLang);
+  }
+
+  if (langToggle) {
+    langToggle.addEventListener('click', toggleLanguage);
   }
 
   // Hero Scroll Down Button
@@ -199,6 +276,8 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleTheme();
     } else if (e.key.toLowerCase() === 'o') {
       toggleOverviewModal();
+    } else if (e.key.toLowerCase() === 'l') {
+      toggleLanguage();
     }
   });
 
@@ -235,7 +314,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (themeToggle) themeToggle.addEventListener('click', toggleTheme);
 
   // Fullscreen Toggle
-  const fullscreenToggle = document.getElementById('fullscreenToggle');
   function toggleFullscreen() {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen().catch(err => {
@@ -250,6 +328,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (fullscreenToggle) fullscreenToggle.addEventListener('click', toggleFullscreen);
 
-  // Initial call
+  // Initial Theme & Language Setup
+  const savedTheme = localStorage.getItem('untoc_deck_theme');
+  if (savedTheme) {
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  }
+
+  setLanguage(currentLang);
   setActiveSlideUI(0);
 });

@@ -27,14 +27,17 @@
     </div>
 
     <div class="top-right">
+      <button class="nav-btn lang-btn" id="langToggle" title="Changer de langue / Switch Language (Touche L)">
+        <span class="icon">🌐</span> <span class="label" id="langLabel">EN</span>
+      </button>
       <button class="nav-btn" id="themeToggle" title="Basculer Mode Clair / Sombre (Touche D)">
-        <span class="icon">🌓</span> <span class="label">Thème</span>
+        <span class="icon">🌓</span> <span class="label" data-i18n="themeBtn">Thème</span>
       </button>
       <button class="nav-btn" id="fullscreenToggle" title="Mode Plein Écran (Touche F)">
-        <span class="icon">⛶</span> <span class="label">Plein Écran</span>
+        <span class="icon">⛶</span> <span class="label" data-i18n="fullscreenBtn">Plein Écran</span>
       </button>
       <button class="nav-btn" id="overviewToggle" title="Plan de la présentation (Touche O)">
-        <span class="icon">▦</span> <span class="label">Plan</span>
+        <span class="icon">▦</span> <span class="label" data-i18n="overviewBtn">Plan</span>
       </button>
     </div>
   </header>
@@ -45,7 +48,7 @@
     <!-- SLIDE 1: Couverture & Présentation Officielle -->
     <section class="slide active" id="slide-1" data-slide="1">
       <div class="slide-inner hero-slide">
-        <div class="badge-pill">
+        <div class="badge-pill" data-i18n="s1_badge">
           <span class="pulse-dot"></span> Conférence des Parties à la Convention de Palerme — Vienne 2026
         </div>
         
@@ -54,31 +57,31 @@
           <span class="title-sub">(Digital Defender)</span>
         </h1>
         
-        <p class="hero-subtitle">
+        <p class="hero-subtitle" data-i18n="s1_subtitle">
           Une réponse numérique innovante, souveraine et ancrée pour la <strong>prévention, le signalement sécurisé et la protection</strong> contre la traite des personnes et l’exploitation au Sénégal et en Afrique de l’Ouest.
         </p>
 
         <div class="hero-stats-strip">
           <div class="stat-card">
             <span class="stat-number">100%</span>
-            <span class="stat-desc">Anonymat inviolable garanti</span>
+            <span class="stat-desc" data-i18n="s1_stat1_desc">Anonymat inviolable garanti</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">Loi 2005-06</span>
-            <span class="stat-desc">Cadre légal sénégalais intégré</span>
+            <span class="stat-number" data-i18n="s1_stat2_num">Loi 2005-06</span>
+            <span class="stat-desc" data-i18n="s1_stat2_desc">Cadre légal sénégalais intégré</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">IA Locale</span>
-            <span class="stat-desc">Tri d'urgence & vulgarisation</span>
+            <span class="stat-number" data-i18n="s1_stat3_num">IA Locale</span>
+            <span class="stat-desc" data-i18n="s1_stat3_desc">Tri d'urgence & vulgarisation</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">PWA</span>
-            <span class="stat-desc">Accès smartphone sans barrière</span>
+            <span class="stat-desc" data-i18n="s1_stat4_desc">Accès smartphone sans barrière</span>
           </div>
         </div>
 
         <div class="partner-logos-tray">
-          <div class="partner-label">Écosystème Partenarial & Institutionnel :</div>
+          <div class="partner-label" data-i18n="s1_partners_label">Écosystème Partenarial & Institutionnel :</div>
           <div class="logos-row">
             <img src="assets/UNODC-logo-full-EN-4c.png" alt="UNODC Logo" class="partner-logo light-only">
             <img src="assets/UNODC-logo-full-EN-white.png" alt="UNODC Logo" class="partner-logo dark-only">
@@ -88,7 +91,7 @@
           </div>
         </div>
 
-        <button class="scroll-down-prompt" id="heroScrollDown">
+        <button class="scroll-down-prompt" id="heroScrollDown" data-i18n="s1_scroll_prompt">
           <span>Découvrir la Présentation</span>
           <span class="scroll-arrow-down">&darr;</span>
         </button>
@@ -99,37 +102,37 @@
     <section class="slide" id="slide-2" data-slide="2">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">01. Contexte & Territoire</span>
-          <h2>Ancrage Géographique et Réalités du Sénégal</h2>
-          <p class="lead">Une réponse technologique calibrée sur les routes réelles de vulnérabilité et d’exploitation en Afrique de l’Ouest.</p>
+          <span class="section-tag" data-i18n="s2_tag">01. Contexte & Territoire</span>
+          <h2 data-i18n="s2_title">Ancrage Géographique et Réalités du Sénégal</h2>
+          <p class="lead" data-i18n="s2_lead">Une réponse technologique calibrée sur les routes réelles de vulnérabilité et d’exploitation en Afrique de l’Ouest.</p>
         </div>
 
         <div class="grid-3-cards">
           <div class="feature-card">
-            <div class="card-tag tag-accent">Centres Urbains</div>
-            <h3>Mendicité Forcée des Enfants</h3>
-            <p>Détournement d'enfants vulnérables (phénomène des talibés mendiants) exploités économiquement dans les grands pôles urbains de Dakar, Thiès, Touba et Saint-Louis, souvent isolés de leurs familles.</p>
-            <div class="card-highlight">Enjeu clé : Détection précoce des violences et signalement discret par les témoins citoyens.</div>
+            <div class="card-tag tag-accent" data-i18n="s2_c1_tag">Centres Urbains</div>
+            <h3 data-i18n="s2_c1_title">Mendicité Forcée des Enfants</h3>
+            <p data-i18n="s2_c1_p">Détournement d'enfants vulnérables (phénomène des talibés mendiants) exploités économiquement dans les grands pôles urbains de Dakar, Thiès, Touba et Saint-Louis, souvent isolés de leurs familles.</p>
+            <div class="card-highlight" data-i18n="s2_c1_highlight">Enjeu clé : Détection précoce des violences et signalement discret par les témoins citoyens.</div>
           </div>
 
           <div class="feature-card">
-            <div class="card-tag tag-primary">Régions Aurifères</div>
-            <h3>Travail Forcé dans l'Orpaillage</h3>
-            <p>Dans le sud-est du Sénégal (Kédougou, Sabodala), des milliers de travailleurs dont des femmes et mineurs sont soumis à des conditions d’exploitation extrême dans les mines artisanales informelles.</p>
-            <div class="card-highlight">Enjeu clé : Accès à l'information juridique dans des zones reculées et à faible connectivité.</div>
+            <div class="card-tag tag-primary" data-i18n="s2_c2_tag">Régions Aurifères</div>
+            <h3 data-i18n="s2_c2_title">Travail Forcé dans l'Orpaillage</h3>
+            <p data-i18n="s2_c2_p">Dans le sud-est du Sénégal (Kédougou, Sabodala), des milliers de travailleurs dont des femmes et mineurs sont soumis à des conditions d’exploitation extrême dans les mines artisanales informelles.</p>
+            <div class="card-highlight" data-i18n="s2_c2_highlight">Enjeu clé : Accès à l'information juridique dans des zones reculées et à faible connectivité.</div>
           </div>
 
           <div class="feature-card">
-            <div class="card-tag tag-secondary">Couloirs Transfrontaliers</div>
-            <h3>Traite & Exploitation Transnationale</h3>
-            <p>Le corridor CEDEAO (Dakar – Bamako – Niamey – Conakry) est le théâtre de filières de traite sexuelle et d'esclavage domestique invisible, exploitant la détresse de migrants vulnérables.</p>
-            <div class="card-highlight">Enjeu clé : Interopérabilité des signalements et preuves inviolables pour la chaîne judiciaire.</div>
+            <div class="card-tag tag-secondary" data-i18n="s2_c3_tag">Couloirs Transfrontaliers</div>
+            <h3 data-i18n="s2_c3_title">Traite & Exploitation Transnationale</h3>
+            <p data-i18n="s2_c3_p">Le corridor CEDEAO (Dakar – Bamako – Niamey – Conakry) est le théâtre de filières de traite sexuelle et d'esclavage domestique invisible, exploitant la détresse de migrants vulnérables.</p>
+            <div class="card-highlight" data-i18n="s2_c3_highlight">Enjeu clé : Interopérabilité des signalements et preuves inviolables pour la chaîne judiciaire.</div>
           </div>
         </div>
 
         <div class="dignity-banner">
           <span class="dignity-icon">🤝</span>
-          <div>
+          <div data-i18n="s2_dignity">
             <strong>Principe de Dignité :</strong> Aucune représentation sensationnaliste ni misérabiliste. XAM TE AAR traite les survivants et personnes vulnérables comme des sujets de droits à émanciper et à protéger.
           </div>
         </div>
@@ -140,38 +143,38 @@
     <section class="slide" id="slide-3" data-slide="3">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">02. Problématique Terrain</span>
-          <h2>Pourquoi les Canaux Traditionnels Échouent-ils ?</h2>
-          <p class="lead">Les victimes et témoins font face à quatre verrous majeurs que la technologie doit briser.</p>
+          <span class="section-tag" data-i18n="s3_tag">02. Problématique Terrain</span>
+          <h2 data-i18n="s3_title">Pourquoi les Canaux Traditionnels Échouent-ils ?</h2>
+          <p class="lead" data-i18n="s3_lead">Les victimes et témoins font face à quatre verrous majeurs que la technologie doit briser.</p>
         </div>
 
         <div class="grid-4-barriers">
           <div class="barrier-item">
             <div class="barrier-number">01</div>
-            <h3>La Peur des Représailles</h3>
-            <p>Peur d'être identifié par les trafiquants ou rejeté par sa communauté. L'obligation de décliner son identité dans un commissariat bloque <strong>l'écrasante majorité des alertes</strong>.</p>
+            <h3 data-i18n="s3_b1_title">La Peur des Représailles</h3>
+            <p data-i18n="s3_b1_p">Peur d'être identifié par les trafiquants ou rejeté par sa communauté. L'obligation de décliner son identité dans un commissariat bloque <strong>l'écrasante majorité des alertes</strong>.</p>
           </div>
 
           <div class="barrier-item">
             <div class="barrier-number">02</div>
-            <h3>La Fracture Linguistique</h3>
-            <p>Les textes juridiques et formulaires sont rédigés en français administratif, inaccessibles à une grande partie de la population qui s'exprime en <strong>Wolof, Pulaar ou Sérère</strong>.</p>
+            <h3 data-i18n="s3_b2_title">La Fracture Linguistique</h3>
+            <p data-i18n="s3_b2_p">Les textes juridiques et formulaires sont rédigés en français administratif, inaccessibles à une grande partie de la population qui s'exprime en <strong>Wolof, Pulaar ou Sérère</strong>.</p>
           </div>
 
           <div class="barrier-item">
             <div class="barrier-number">03</div>
-            <h3>L'Inaccessibilité Géographique</h3>
-            <p>Les services spécialisés de l'État (AEMO, brigades dédiées) sont souvent concentrés dans les capitales régionales, laissant les zones périphériques sans recours immédiat.</p>
+            <h3 data-i18n="s3_b3_title">L'Inaccessibilité Géographique</h3>
+            <p data-i18n="s3_b3_p">Les services spécialisés de l'État (AEMO, brigades dédiées) sont souvent concentrés dans les capitales régionales, laissant les zones périphériques sans recours immédiat.</p>
           </div>
 
           <div class="barrier-item">
             <div class="barrier-number">04</div>
-            <h3>L'Absence de Traçabilité</h3>
-            <p>Les alertes verbales ou téléphoniques se perdent souvent sans suivi structuré, empêchant la mesure statistique réelle et l'allocation efficace des secours.</p>
+            <h3 data-i18n="s3_b4_title">L'Absence de Traçabilité</h3>
+            <p data-i18n="s3_b4_p">Les alertes verbales ou téléphoniques se perdent souvent sans suivi structuré, empêchant la mesure statistique réelle et l'allocation efficace des secours.</p>
           </div>
         </div>
 
-        <div class="quote-callout">
+        <div class="quote-callout" data-i18n="s3_quote">
           « Au Sénégal, la traite ne commence pas par des chaînes visibles, mais par la manipulation, la pauvreté et le silence. Pour libérer la parole, il faut d'abord créer un sanctuaire de confiance absolue. »
         </div>
       </div>
@@ -181,40 +184,40 @@
     <section class="slide" id="slide-4" data-slide="4">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">03. L'Écosystème Produit</span>
-          <h2>XAM TE AAR : Une Solution Numérique à 4 Piliers</h2>
-          <p class="lead">Une plateforme intégrée qui couvre l'intégralité du cycle : Prévenir, Écouter, Alerter et Guérir.</p>
+          <span class="section-tag" data-i18n="s4_tag">03. L'Écosystème Produit</span>
+          <h2 data-i18n="s4_title">XAM TE AAR : Une Solution Numérique à 4 Piliers</h2>
+          <p class="lead" data-i18n="s4_lead">Une plateforme intégrée qui couvre l'intégralité du cycle : Prévenir, Écouter, Alerter et Guérir.</p>
         </div>
 
         <div class="pillars-grid">
           <div class="pillar-box">
-            <div class="pillar-badge">Pilier 1</div>
-            <h3>Sensibilisation & Éducation</h3>
-            <p>Compréhension des 3 composantes fondamentales de la traite selon l'UNTOC : <strong>Acte, Moyens et Finalité</strong>. Vidéos pédagogiques IA et articles de prévention.</p>
+            <div class="pillar-badge" data-i18n="s4_p1_badge">Pilier 1</div>
+            <h3 data-i18n="s4_p1_title">Sensibilisation & Éducation</h3>
+            <p data-i18n="s4_p1_p">Compréhension des 3 composantes fondamentales de la traite selon l'UNTOC : <strong>Acte, Moyens et Finalité</strong>. Vidéos pédagogiques IA et articles de prévention.</p>
           </div>
 
           <div class="pillar-box highlight-pillar">
-            <div class="pillar-badge">Pilier 2</div>
-            <h3>Assistant IA Juridique & Écoute</h3>
-            <p>Chatbot interactif fondé sur la <strong>Loi sénégalaise 2005-06</strong> et les données UNODC. Écoute active, vulgarisation des droits et conseils d'urgence immédiats.</p>
+            <div class="pillar-badge" data-i18n="s4_p2_badge">Pilier 2</div>
+            <h3 data-i18n="s4_p2_title">Assistant IA Juridique & Écoute</h3>
+            <p data-i18n="s4_p2_p">Chatbot interactif fondé sur la <strong>Loi sénégalaise 2005-06</strong> et les données UNODC. Écoute active, vulgarisation des droits et conseils d'urgence immédiats.</p>
           </div>
 
           <div class="pillar-box">
-            <div class="pillar-badge">Pilier 3</div>
-            <h3>Signalement Anonyme & Preuves</h3>
-            <p>Soumission discrète en 3 étapes. Téléversement de pièces jointes (photos, vocaux, vidéos) sans création de compte. Génération d'un code de suivi unique <code>XTA-XXXXXX</code>.</p>
+            <div class="pillar-badge" data-i18n="s4_p3_badge">Pilier 3</div>
+            <h3 data-i18n="s4_p3_title">Signalement Anonyme & Preuves</h3>
+            <p data-i18n="s4_p3_p">Soumission discrète en 3 étapes. Téléversement de pièces jointes (photos, vocaux, vidéos) sans création de compte. Génération d'un code de suivi unique <code>XTA-XXXXXX</code>.</p>
           </div>
 
           <div class="pillar-box">
-            <div class="pillar-badge">Pilier 4</div>
-            <h3>Récits & Parole des Survivants</h3>
-            <p>Espace de plaidoyer avec consentement obligatoire et anonymisation stricte. Droit au retrait immédiat du témoignage à tout moment par son auteur.</p>
+            <div class="pillar-badge" data-i18n="s4_p4_badge">Pilier 4</div>
+            <h3 data-i18n="s4_p4_title">Récits & Parole des Survivants</h3>
+            <p data-i18n="s4_p4_p">Espace de plaidoyer avec consentement obligatoire et anonymisation stricte. Droit au retrait immédiat du témoignage à tout moment par son auteur.</p>
           </div>
         </div>
 
         <div class="pwa-highlight">
           <span class="pwa-badge">Progressive Web App</span>
-          <span>Installable directement sur n'importe quel smartphone Android / iOS sans dépendre du Play Store ou de l'App Store, fonctionnant même en basse connectivité.</span>
+          <span data-i18n="s4_pwa_text">Installable directement sur n'importe quel smartphone Android / iOS sans dépendre du Play Store ou de l'App Store, fonctionnant même en basse connectivité.</span>
         </div>
       </div>
     </section>
@@ -223,31 +226,31 @@
     <section class="slide" id="slide-5" data-slide="5">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">04. Souveraineté & Données</span>
-          <h2>Sécurité et Protection des Données par Conception</h2>
-          <p class="lead">Parce qu'un signalement concerne la vie humaine, chaque couche d'infrastructure est sanctuarisée.</p>
+          <span class="section-tag" data-i18n="s5_tag">04. Souveraineté & Données</span>
+          <h2 data-i18n="s5_title">Sécurité et Protection des Données par Conception</h2>
+          <p class="lead" data-i18n="s5_lead">Parce qu'un signalement concerne la vie humaine, chaque couche d'infrastructure est sanctuarisée.</p>
         </div>
 
         <div class="security-architecture-grid">
           <div class="sec-col">
             <div class="sec-item">
               <div>
-                <h4>Règle d'Inviolabilité Absolue</h4>
-                <p><strong>Aucun signalement ne peut être supprimé</strong> de la base de données. L'intégrité de la preuve est garantie pour toute exploitation judiciaire ultérieure.</p>
+                <h4 data-i18n="s5_i1_title">Règle d'Inviolabilité Absolue</h4>
+                <p data-i18n="s5_i1_p"><strong>Aucun signalement ne peut être supprimé</strong> de la base de données. L'intégrité de la preuve est garantie pour toute exploitation judiciaire ultérieure.</p>
               </div>
             </div>
 
             <div class="sec-item">
               <div>
-                <h4>Cloisonnement RBAC Strict</h4>
-                <p>Séparation étanche entre <em>Super Admin</em> et <em>Admin Terrain</em>. Chaque intervenant ne consulte que les dossiers sous sa juridiction.</p>
+                <h4 data-i18n="s5_i2_title">Cloisonnement RBAC Strict</h4>
+                <p data-i18n="s5_i2_p">Séparation étanche entre <em>Super Admin</em> et <em>Admin Terrain</em>. Chaque intervenant ne consulte que les dossiers sous sa juridiction.</p>
               </div>
             </div>
 
             <div class="sec-item">
               <div>
-                <h4>Uploads Sécurisés (Anti-Fuite)</h4>
-                <p>Les fichiers de preuves (photos/vidéos) sont renommés en UUID cryptographique et stockés hors de portée publique : consultation protégée par jeton d'authentification.</p>
+                <h4 data-i18n="s5_i3_title">Uploads Sécurisés (Anti-Fuite)</h4>
+                <p data-i18n="s5_i3_p">Les fichiers de preuves (photos/vidéos) sont renommés en UUID cryptographique et stockés hors de portée publique : consultation protégée par jeton d'authentification.</p>
               </div>
             </div>
           </div>
@@ -255,22 +258,22 @@
           <div class="sec-col">
             <div class="sec-item">
               <div>
-                <h4>Zéro Traçage IP des Lanceurs d'Alerte</h4>
-                <p>Aucun enregistrement d'adresse IP n'est associé aux signalements anonymes. Le lanceur d'alerte peut agir sans craindre d'être identifié.</p>
+                <h4 data-i18n="s5_i4_title">Zéro Traçage IP des Lanceurs d'Alerte</h4>
+                <p data-i18n="s5_i4_p">Aucun enregistrement d'adresse IP n'est associé aux signalements anonymes. Le lanceur d'alerte peut agir sans craindre d'être identifié.</p>
               </div>
             </div>
 
             <div class="sec-item">
               <div>
-                <h4>Architecture Conteneurisée Docker</h4>
-                <p>Séparation complète des conteneurs Nginx Proxy, API Node.js/Express, et PostgreSQL chiffré avec certificat SSL Let's Encrypt automatique.</p>
+                <h4 data-i18n="s5_i5_title">Architecture Conteneurisée Docker</h4>
+                <p data-i18n="s5_i5_p">Séparation complète des conteneurs Nginx Proxy, API Node.js/Express, et PostgreSQL chiffré avec certificat SSL Let's Encrypt automatique.</p>
               </div>
             </div>
 
             <div class="sec-item">
               <div>
-                <h4>Déconnexion Automatique Inactivité</h4>
-                <p>Protection contre les intrusions physiques dans les locaux d'intervention grâce à la révocation automatique des sessions JWT administratives.</p>
+                <h4 data-i18n="s5_i6_title">Déconnexion Automatique Inactivité</h4>
+                <p data-i18n="s5_i6_p">Protection contre les intrusions physiques dans les locaux d'intervention grâce à la révocation automatique des sessions JWT administratives.</p>
               </div>
             </div>
           </div>
@@ -282,51 +285,51 @@
     <section class="slide" id="slide-6" data-slide="6">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">05. Innovation Technologique</span>
-          <h2>L'IA au Service du Secours : Gemini 3.1 & Fallback Local</h2>
-          <p class="lead">L'intelligence artificielle n'est pas un gadget marketing : elle priorise les vies en danger en temps réel.</p>
+          <span class="section-tag" data-i18n="s6_tag">05. Innovation Technologique</span>
+          <h2 data-i18n="s6_title">L'IA au Service du Secours : Gemini 3.1 & Fallback Local</h2>
+          <p class="lead" data-i18n="s6_lead">L'intelligence artificielle n'est pas un gadget marketing : elle priorise les vies en danger en temps réel.</p>
         </div>
 
         <div class="grid-2-equal">
           <div class="ai-box">
-            <div class="ai-box-badge">Fonctionnalité 1</div>
-            <h3>Qualification Automatique de l'Urgence</h3>
-            <p>Chaque signalement reçu est immédiatement analysé par un modèle de langage entraîné pour extraire la dangerosité et le contexte :</p>
+            <div class="ai-box-badge" data-i18n="s6_f1_badge">Fonctionnalité 1</div>
+            <h3 data-i18n="s6_f1_title">Qualification Automatique de l'Urgence</h3>
+            <p data-i18n="s6_f1_p">Chaque signalement reçu est immédiatement analysé par un modèle de langage entraîné pour extraire la dangerosité et le contexte :</p>
             
             <div class="urgency-scale">
               <div class="urgency-row high">
                 <span class="urgency-pill red">HIGH</span>
-                <span>Violence physique active, séquestration, danger de mort immédiat &rarr; <strong>Alerte prioritaire</strong></span>
+                <span data-i18n="s6_urg_high">Violence physique active, séquestration, danger de mort immédiat &rarr; <strong>Alerte prioritaire</strong></span>
               </div>
               <div class="urgency-row medium">
                 <span class="urgency-pill amber">MEDIUM</span>
-                <span>Exploitation économique sans danger vital immédiat, situation suspecte récurrente</span>
+                <span data-i18n="s6_urg_med">Exploitation économique sans danger vital immédiat, situation suspecte récurrente</span>
               </div>
               <div class="urgency-row low">
                 <span class="urgency-pill green">LOW</span>
-                <span>Demande d'information, signalement préventif ou éducatif</span>
+                <span data-i18n="s6_urg_low">Demande d'information, signalement préventif ou éducatif</span>
               </div>
             </div>
 
-            <div class="fallback-note">
+            <div class="fallback-note" data-i18n="s6_fallback">
               <strong>Résilience Hors-Ligne (Fallback Heuristique) :</strong> Si l'API cloud est inaccessible, un algorithme local d'analyse lexicale prend le relais instantanément sur le serveur.
             </div>
           </div>
 
           <div class="ai-box">
-            <div class="ai-box-badge">Fonctionnalité 2</div>
-            <h3>Chatbot Juridique & Écoute Empathique</h3>
-            <p>Un assistant virtuel accessible 24h/24 guidé par les principes d'écoute active et de confidentialité :</p>
+            <div class="ai-box-badge" data-i18n="s6_f2_badge">Fonctionnalité 2</div>
+            <h3 data-i18n="s6_f2_title">Chatbot Juridique & Écoute Empathique</h3>
+            <p data-i18n="s6_f2_p">Un assistant virtuel accessible 24h/24 guidé par les principes d'écoute active et de confidentialité :</p>
             
             <div class="chat-demo-card">
-              <div class="chat-msg user">« Mon employeur a confisqué mon passeport et refuse de me payer depuis 3 mois... »</div>
-              <div class="chat-msg bot">
+              <div class="chat-msg user" data-i18n="s6_chat_user">« Mon employeur a confisqué mon passeport et refuse de me payer depuis 3 mois... »</div>
+              <div class="chat-msg bot" data-i18n="s6_chat_bot">
                 <strong>Assistant Xam Te Aar :</strong><br>
                 « La confiscation de documents d'identité et le travail non rémunéré constituent une infraction grave punie par l'article 4 de la Loi 2005-06 au Sénégal. Vous êtes en droit d'être secouru(e). Souhaitez-vous faire un signalement 100% anonyme dès maintenant ? »
               </div>
             </div>
 
-            <p class="ai-privacy-note">
+            <p class="ai-privacy-note" data-i18n="s6_privacy">
               🔒 <strong>Protection de la vie privée :</strong> Le chat est sans état (stateless). Aucune conversation n'est archivée sur disque, garantissant qu'aucune trace compromettante ne subsiste.
             </p>
           </div>
@@ -338,45 +341,45 @@
     <section class="slide" id="slide-7" data-slide="7">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">06. Validation Terrain</span>
-          <h2>Sortie de MVP : Premières Données et Validations Réelles</h2>
-          <p class="lead">Le passage du concept à la réalité : la plateforme est en ligne sur <strong>xamteaar.sn</strong> et a reçu ses premiers signalements.</p>
+          <span class="section-tag" data-i18n="s7_tag">06. Validation Terrain</span>
+          <h2 data-i18n="s7_title">Sortie de MVP : Premières Données et Validations Réelles</h2>
+          <p class="lead" data-i18n="s7_lead">Le passage du concept à la réalité : la plateforme est en ligne sur <strong>xamteaar.sn</strong> et a reçu ses premiers signalements.</p>
         </div>
 
         <div class="results-grid">
           <div class="result-card primary-border">
-            <div class="res-tag">Confirmation Clé #1</div>
-            <h3>Adoption Massive de l'Anonymat</h3>
-            <p>Les premiers dossiers reçus lors de la phase de lancement ont été soumis sous couvert d'anonymat, validant de façon irréfutable l'hypothèse centrale du projet : <strong>l'absence d'obligation de créer un compte est la clé d'adoption</strong>.</p>
+            <div class="res-tag" data-i18n="s7_r1_tag">Confirmation Clé #1</div>
+            <h3 data-i18n="s7_r1_title">Adoption Massive de l'Anonymat</h3>
+            <p data-i18n="s7_r1_p">Les premiers dossiers reçus lors de la phase de lancement ont été soumis sous couvert d'anonymat, validant de façon irréfutable l'hypothèse centrale du projet : <strong>l'absence d'obligation de créer un compte est la clé d'adoption</strong>.</p>
           </div>
 
           <div class="result-card accent-border">
-            <div class="res-tag">Confirmation Clé #2</div>
-            <h3>Efficacité du Triage d'Urgence</h3>
-            <p>Le moteur d'analyse sémantique a permis de classifier les descriptions soumises et d'attribuer des niveaux d'urgence, facilitant le travail d'examen pour les administrateurs de la plateforme.</p>
+            <div class="res-tag" data-i18n="s7_r2_tag">Confirmation Clé #2</div>
+            <h3 data-i18n="s7_r2_title">Efficacité du Triage d'Urgence</h3>
+            <p data-i18n="s7_r2_p">Le moteur d'analyse sémantique a permis de classifier les descriptions soumises et d'attribuer des niveaux d'urgence, facilitant le travail d'examen pour les administrateurs de la plateforme.</p>
           </div>
 
           <div class="result-card secondary-border">
-            <div class="res-tag">Confirmation Clé #3</div>
-            <h3>Appétence pour les Ressources Multimédias</h3>
-            <p>Les vidéos pédagogiques et contenus d'information ont démontré une forte rétention, confirmant le besoin d'un apprentissage visuel pour dépasser les barrières d'alphabétisation.</p>
+            <div class="res-tag" data-i18n="s7_r3_tag">Confirmation Clé #3</div>
+            <h3 data-i18n="s7_r3_title">Appétence pour les Ressources Multimédias</h3>
+            <p data-i18n="s7_r3_p">Les vidéos pédagogiques et contenus d'information ont démontré une forte rétention, confirmant le besoin d'un apprentissage visuel pour dépasser les barrières d'alphabétisation.</p>
           </div>
         </div>
 
         <div class="lessons-learned-box">
-          <div class="lessons-header">💡 Principaux Enseignements Tirés de la Phase Pilote :</div>
+          <div class="lessons-header" data-i18n="s7_lessons_header">💡 Principaux Enseignements Tirés de la Phase Pilote :</div>
           <div class="lessons-list">
             <div class="lesson-item">
               <span class="bullet">1</span>
-              <span><strong>Besoin de synthèse vocale :</strong> Les usagers préfèrent écouter des explications plutôt que lire de longs textes juridiques.</span>
+              <span data-i18n="s7_l1"><strong>Besoin de synthèse vocale :</strong> Les usagers préfèrent écouter des explications plutôt que lire de longs textes juridiques.</span>
             </div>
             <div class="lesson-item">
               <span class="bullet">2</span>
-              <span><strong>Rapidité d'intervention :</strong> Pour les cas qualifiés en urgence <code>HIGH</code>, un pont direct vers les numéros d'urgence de la police et du Samu est vital.</span>
+              <span data-i18n="s7_l2"><strong>Rapidité d'intervention :</strong> Pour les cas qualifiés en urgence <code>HIGH</code>, un pont direct vers les numéros d'urgence de la police et du Samu est vital.</span>
             </div>
             <div class="lesson-item">
               <span class="bullet">3</span>
-              <span><strong>Ancrage communautaire :</strong> Le digital est un accélérateur, mais il doit obligatoirement s'appuyer sur des relais associatifs de terrain.</span>
+              <span data-i18n="s7_l3"><strong>Ancrage communautaire :</strong> Le digital est un accélérateur, mais il doit obligatoirement s'appuyer sur des relais associatifs de terrain.</span>
             </div>
           </div>
         </div>
@@ -387,48 +390,48 @@
     <section class="slide" id="slide-8" data-slide="8">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">07. Gouvernance</span>
-          <h2>L'Écosystème Partenarial : La Force d'une Action Commune</h2>
-          <p class="lead">XAM TE AAR réunit la puissance institutionnelle, l'agilité technologique et la proximité de la société civile.</p>
+          <span class="section-tag" data-i18n="s8_tag">07. Gouvernance</span>
+          <h2 data-i18n="s8_title">L'Écosystème Partenarial : La Force d'une Action Commune</h2>
+          <p class="lead" data-i18n="s8_lead">XAM TE AAR réunit la puissance institutionnelle, l'agilité technologique et la proximité de la société civile.</p>
         </div>
 
         <div class="partners-triad">
           <div class="partner-column">
             <div class="part-header">
-              <span class="part-type">Niveau International</span>
+              <span class="part-type" data-i18n="s8_c1_type">Niveau International</span>
               <h3>UNODC (ONUDC)</h3>
             </div>
-            <p class="part-desc">Office des Nations Unies contre la drogue et le crime. Cadrage méthodologique, conformité avec le Protocole de Palerme, et dissémination des standards internationaux de lutte contre la traite.</p>
+            <p class="part-desc" data-i18n="s8_c1_desc">Office des Nations Unies contre la drogue et le crime. Cadrage méthodologique, conformité avec le Protocole de Palerme, et dissémination des standards internationaux de lutte contre la traite.</p>
             <ul class="part-points">
-              <li>Alignement sur les définitions universelles UNTOC</li>
-              <li>Partage d'expertise juridique et technique</li>
-              <li>Reconnaissance au sein des forums multilatéraux</li>
+              <li data-i18n="s8_c1_li1">Alignement sur les définitions universelles UNTOC</li>
+              <li data-i18n="s8_c1_li2">Partage d'expertise juridique et technique</li>
+              <li data-i18n="s8_c1_li3">Reconnaissance au sein des forums multilatéraux</li>
             </ul>
           </div>
 
           <div class="partner-column highlighted-partner">
             <div class="part-header">
-              <span class="part-type">Niveau National Sénégal</span>
-              <h3>État & Institutions Publiques</h3>
+              <span class="part-type" data-i18n="s8_c2_type">Niveau National Sénégal</span>
+              <h3 data-i18n="s8_c2_title">État & Institutions Publiques</h3>
             </div>
-            <p class="part-desc">Le Comité National de Lutte contre la Traite des Personnes (CNLTP), le Ministère de la Justice, l'AEMO (Action Éducative en Milieu Ouvert) et les forces de l'ordre.</p>
+            <p class="part-desc" data-i18n="s8_c2_desc">Le Comité National de Lutte contre la Traite des Personnes (CNLTP), le Ministère de la Justice, l'AEMO (Action Éducative en Milieu Ouvert) et les forces de l'ordre.</p>
             <ul class="part-points">
-              <li>Application de la Loi 2005-06</li>
-              <li>Prise en charge régalienne des enquêtes judiciaires</li>
-              <li>Protection physique des victimes identifiées</li>
+              <li data-i18n="s8_c2_li1">Application de la Loi 2005-06</li>
+              <li data-i18n="s8_c2_li2">Prise en charge régalienne des enquêtes judiciaires</li>
+              <li data-i18n="s8_c2_li3">Protection physique des victimes identifiées</li>
             </ul>
           </div>
 
           <div class="partner-column">
             <div class="part-header">
-              <span class="part-type">Société Civile & Tech</span>
+              <span class="part-type" data-i18n="s8_c3_type">Société Civile & Tech</span>
               <h3>Free The Slaves & Mbarodi AI</h3>
             </div>
-            <p class="part-desc">Synergie entre une ONG historique de terrain engagée pour l'éradication de l'esclavage moderne et un pôle d'ingénierie IA sénégalais pour le développement souverain.</p>
+            <p class="part-desc" data-i18n="s8_c3_desc">Synergie entre une ONG historique de terrain engagée pour l'éradication de l'esclavage moderne et un pôle d'ingénierie IA sénégalais pour le développement souverain.</p>
             <ul class="part-points">
-              <li>Remontée des besoins réels des communautés</li>
-              <li>Conception éthique et souveraineté logicielle</li>
-              <li>Accompagnement humain et psycho-social</li>
+              <li data-i18n="s8_c3_li1">Remontée des besoins réels des communautés</li>
+              <li data-i18n="s8_c3_li2">Conception éthique et souveraineté logicielle</li>
+              <li data-i18n="s8_c3_li3">Accompagnement humain et psycho-social</li>
             </ul>
           </div>
         </div>
@@ -439,52 +442,52 @@
     <section class="slide" id="slide-9" data-slide="9">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">08. Responsabilité & Éthique</span>
-          <h2>Gestion des Risques et Limites Opérationnelles</h2>
-          <p class="lead">Une plateforme à impact social ne peut réussir sans un cadre éthique et une gestion lucide des risques.</p>
+          <span class="section-tag" data-i18n="s9_tag">08. Responsabilité & Éthique</span>
+          <h2 data-i18n="s9_title">Gestion des Risques et Limites Opérationnelles</h2>
+          <p class="lead" data-i18n="s9_lead">Une plateforme à impact social ne peut réussir sans un cadre éthique et une gestion lucide des risques.</p>
         </div>
 
         <div class="risks-matrix">
           <div class="risk-card">
             <div class="risk-title">
-              <span class="risk-badge red-badge">Risque Opérationnel</span>
-              <h4>Attentes d'Intervention Immédiate</h4>
+              <span class="risk-badge red-badge" data-i18n="s9_r1_badge">Risque Opérationnel</span>
+              <h4 data-i18n="s9_r1_title">Attentes d'Intervention Immédiate</h4>
             </div>
-            <p><strong>Constat :</strong> Une victime en détresse vitale ne doit pas attendre une réponse par message.</p>
-            <div class="mitigation">
+            <p data-i18n="s9_r1_p"><strong>Constat :</strong> Une victime en détresse vitale ne doit pas attendre une réponse par message.</p>
+            <div class="mitigation" data-i18n="s9_r1_mit">
               <strong>Mesure adoptée :</strong> Affichage systématique en tête de page et dans le chatbot des numéros d'urgence nationaux (Police : 17, Gendarmerie : 800 00 20 20, Enfance : 116).
             </div>
           </div>
 
           <div class="risk-card">
             <div class="risk-title">
-              <span class="risk-badge amber-badge">Risque Psychologique</span>
-              <h4>Traumatismes & Santé Mentale</h4>
+              <span class="risk-badge amber-badge" data-i18n="s9_r2_badge">Risque Psychologique</span>
+              <h4 data-i18n="s9_r2_title">Traumatismes & Santé Mentale</h4>
             </div>
-            <p><strong>Constat :</strong> Témoigner peut raviver des traumatismes aigus chez les survivants.</p>
-            <div class="mitigation">
+            <p data-i18n="s9_r2_p"><strong>Constat :</strong> Témoigner peut raviver des traumatismes aigus chez les survivants.</p>
+            <div class="mitigation" data-i18n="s9_r2_mit">
               <strong>Mesure adoptée :</strong> Protocole de consentement éclairé obligatoire, clause de bienveillance, et soutien d'associations spécialisées pour l'accompagnement d'écoute.
             </div>
           </div>
 
           <div class="risk-card">
             <div class="risk-title">
-              <span class="risk-badge blue-badge">Risque Juridique</span>
-              <h4>Recevabilité Judiciaire des Preuves</h4>
+              <span class="risk-badge blue-badge" data-i18n="s9_r3_badge">Risque Juridique</span>
+              <h4 data-i18n="s9_r3_title">Recevabilité Judiciaire des Preuves</h4>
             </div>
-            <p><strong>Constat :</strong> Un signalement anonyme sur internet nécessite des preuves tangibles pour ouvrir une enquête.</p>
-            <div class="mitigation">
+            <p data-i18n="s9_r3_p"><strong>Constat :</strong> Un signalement anonyme sur internet nécessite des preuves tangibles pour ouvrir une enquête.</p>
+            <div class="mitigation" data-i18n="s9_r3_mit">
               <strong>Mesure adoptée :</strong> Horodatage cryptographique des pièces jointes, maintien de la chaîne de possession des preuves et non-suppression des historiques.
             </div>
           </div>
 
           <div class="risk-card">
             <div class="risk-title">
-              <span class="risk-badge green-badge">Risque Éthique</span>
-              <h4>Protection des Modérateurs Humains</h4>
+              <span class="risk-badge green-badge" data-i18n="s9_r4_badge">Risque Éthique</span>
+              <h4 data-i18n="s9_r4_title">Protection des Modérateurs Humains</h4>
             </div>
-            <p><strong>Constat :</strong> L'exposition quotidienne à des récits d'abus engendre une fatigue compassionnelle.</p>
-            <div class="mitigation">
+            <p data-i18n="s9_r4_p"><strong>Constat :</strong> L'exposition quotidienne à des récits d'abus engendre une fatigue compassionnelle.</p>
+            <div class="mitigation" data-i18n="s9_r4_mit">
               <strong>Mesure adoptée :</strong> Filtrage automatisé préalable de la toxicité et rotation des dossiers entre les administrateurs.
             </div>
           </div>
@@ -496,38 +499,38 @@
     <section class="slide" id="slide-10" data-slide="10">
       <div class="slide-inner">
         <div class="slide-header">
-          <span class="section-tag">09. Vision & Avenir</span>
-          <h2>Feuille de Route : Vers un Bouclier Numérique Régional</h2>
-          <p class="lead">Le plan d'expansion stratégique de XAM TE AAR à 3, 6 et 12 mois pour l'Afrique de l'Ouest.</p>
+          <span class="section-tag" data-i18n="s10_tag">09. Vision & Avenir</span>
+          <h2 data-i18n="s10_title">Feuille de Route : Vers un Bouclier Numérique Régional</h2>
+          <p class="lead" data-i18n="s10_lead">Le plan d'expansion stratégique de XAM TE AAR à 3, 6 et 12 mois pour l'Afrique de l'Ouest.</p>
         </div>
 
         <div class="roadmap-timeline">
           <div class="timeline-step">
-            <div class="step-period">3 Mois (T4 2026)</div>
-            <div class="step-title">Inclusion & Vocalisation Wolof/Pulaar</div>
-            <p>Intégration d'un module d'interaction vocale complète en langues locales pour permettre à n'importe quelle personne non alphabétisée de signaler ou de poser ses questions par la voix.</p>
-            <div class="step-kpi">Cible : 100% accessible sans savoir lire</div>
+            <div class="step-period" data-i18n="s10_t1_period">3 Mois (T4 2026)</div>
+            <div class="step-title" data-i18n="s10_t1_title">Inclusion & Vocalisation Wolof/Pulaar</div>
+            <p data-i18n="s10_t1_p">Intégration d'un module d'interaction vocale complète en langues locales pour permettre à n'importe quelle personne non alphabétisée de signaler ou de poser ses questions par la voix.</p>
+            <div class="step-kpi" data-i18n="s10_t1_kpi">Cible : 100% accessible sans savoir lire</div>
           </div>
 
           <div class="timeline-step">
-            <div class="step-period">6 Mois (S1 2027)</div>
-            <div class="step-title">Pont Opérationnel Lignes Vertes (116)</div>
-            <p>API sécurisée d'interconnexion directe avec les systèmes d'alerte du Samu social et des lignes vertes nationales de protection de l'enfance au Sénégal.</p>
-            <div class="step-kpi">Cible : Prise en charge < 2h sur urgence haute</div>
+            <div class="step-period" data-i18n="s10_t2_period">6 Mois (S1 2027)</div>
+            <div class="step-title" data-i18n="s10_t2_title">Pont Opérationnel Lignes Vertes (116)</div>
+            <p data-i18n="s10_t2_p">API sécurisée d'interconnexion directe avec les systèmes d'alerte du Samu social et des lignes vertes nationales de protection de l'enfance au Sénégal.</p>
+            <div class="step-kpi" data-i18n="s10_t2_kpi">Cible : Prise en charge < 2h sur urgence haute</div>
           </div>
 
           <div class="timeline-step">
-            <div class="step-period">12 Mois (Fin 2027)</div>
-            <div class="step-title">Extension Transfrontalière CEDEAO</div>
-            <p>Déploiement du modèle aux pays voisins partageant les couloirs de traite (Mali, Guinée, Gambie, Niger) avec adaptation aux corpus légaux nationaux respectifs.</p>
-            <div class="step-kpi">Cible : Observatoire régional de la traite</div>
+            <div class="step-period" data-i18n="s10_t3_period">12 Mois (Fin 2027)</div>
+            <div class="step-title" data-i18n="s10_t3_title">Extension Transfrontalière CEDEAO</div>
+            <p data-i18n="s10_t3_p">Déploiement du modèle aux pays voisins partageant les couloirs de traite (Mali, Guinée, Gambie, Niger) avec adaptation aux corpus légaux nationaux respectifs.</p>
+            <div class="step-kpi" data-i18n="s10_t3_kpi">Cible : Observatoire régional de la traite</div>
           </div>
         </div>
 
         <div class="final-pledge">
           <div class="pledge-text">
-            <h3>L'Appel de Vienne 2026 :</h3>
-            <p>« En réunissant la technologie souveraine, le droit et la dignité humaine, XAM TE AAR démontre que l'Afrique innove pour protéger ses enfants et ses citoyens. Avec votre soutien, faisons de ce sanctuaire numérique un standard mondial de protection. »</p>
+            <h3 data-i18n="s10_pledge_title">L'Appel de Vienne 2026 :</h3>
+            <p data-i18n="s10_pledge_p">« En réunissant la technologie souveraine, le droit et la dignité humaine, XAM TE AAR démontre que l'Afrique innove pour protéger ses enfants et ses citoyens. Avec votre soutien, faisons de ce sanctuaire numérique un standard mondial de protection. »</p>
           </div>
         </div>
       </div>
@@ -541,11 +544,11 @@
   <!-- Floating Fast Navigation Controls -->
   <div class="floating-bottom-bar">
     <button class="float-btn" id="prevBtn" title="Section précédente (&uarr;)">
-      <span>&uarr;</span> Précédent
+      <span>&uarr;</span> <span data-i18n="prevBtn">Précédent</span>
     </button>
-    <span class="float-hint">Faites défiler vers le bas &darr;</span>
+    <span class="float-hint" data-i18n="scrollHint">Faites défiler vers le bas &darr;</span>
     <button class="float-btn" id="nextBtn" title="Section suivante (&darr;)">
-      Suivant <span>&darr;</span>
+      <span data-i18n="nextBtn">Suivant</span> <span>&darr;</span>
     </button>
   </div>
 
@@ -554,13 +557,14 @@
     <div class="overview-backdrop" id="overviewBackdrop"></div>
     <div class="overview-content">
       <div class="overview-header">
-        <h3>Plan de la Présentation (UNTOC 2026)</h3>
+        <h3 data-i18n="overviewModalTitle">Plan de la Présentation (UNTOC 2026)</h3>
         <button class="close-btn" id="closeOverview">&times;</button>
       </div>
       <div class="overview-grid" id="overviewGrid"></div>
     </div>
   </div>
 
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

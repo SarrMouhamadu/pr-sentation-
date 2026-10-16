@@ -4,7 +4,7 @@ Support de présentation officiel interactif pour la Conférence des Parties à 
 
 ---
 
-## 🌍 À propos
+## 🌍 À propos / About
 
 **XAM TE AAR** (« Savoir pour se Protéger » en wolof) est une plateforme numérique citoyenne et institutionnelle dédiée à la prévention, au signalement sécurisé et à la lutte contre la traite des personnes et l’exploitation au Sénégal et en Afrique de l’Ouest.
 
@@ -12,18 +12,27 @@ Développée avec l'appui de **Mbarodi AI**, en concertation avec la **CNLTP** (
 
 ---
 
+## 🌐 Support Bilingue (Français & English)
+
+La présentation intègre nativement un sélecteur de langue **Français / Anglais** pour répondre aux exigences des délégations et conférences internationales :
+- **Bouton dédié dans la barre supérieure** : bascule immédiate en un clic (`FR` / `EN`).
+- **Raccourci clavier direct** : touche `L` pour alterner entre le français et l'anglais.
+- **Mémorisation de la préférence** : conservation automatique du choix dans le navigateur (`localStorage`).
+
+---
+
 ## 🎯 Contenu des 10 Slides
 
-1. **01. Vision & Mission** : Devoir d'agir face à l'invisibilité de la traite.
-2. **02. Le Diagnostic Sénégal & CEDEAO** : Réalités locales, exploitation et routes migratoires.
-3. **03. L'Écosystème Produit** : PWA multilingue (Wolof, Français, Pulaar), WhatsApp bot, cartographie des refuges.
-4. **04. Souveraineté & Données** : Chiffrement de bout en bout, conformité CDP Sénégal, hébergement souverain.
-5. **05. Premiers Résultats & Données Terrain** : Métriques réelles post-lancement (signalements, temps de qualification).
-6. **06. L'Humain au Cœur de la Technologie** : Triangulation assistants sociaux, ONG et forces de l'ordre.
-7. **07. Modèle Économique & Pérennité** : Partenariats institutionnels et bailleurs internationaux.
-8. **08. Feuille de Route 2026-2028** : IA prédictive, expansion transfrontalière CEDEAO.
-9. **09. Appel à l'Action & Coopération** : Partenariats bilatéraux et harmonisation UNTOC.
-10. **10. Conclusion & Contact** : Équipe fondatrice et coordonnées directes.
+1. **01. Couverture & Cérémonial UNTOC** / Cover & UNTOC Ceremonial
+2. **02. Ancrage Territorial & Sénégal** / Territorial Roots & Realities in Senegal
+3. **03. Problématique & Verrous Terrain** / Field Challenges & Bottlenecks
+4. **04. Les 4 Piliers XAM TE AAR** / The 4 XAM TE AAR Pillars
+5. **05. Sécurité & Inviolabilité des Données** / Security & Data Protection by Design
+6. **06. IA Gemini & Triage d'Urgence** / AI for Relief: Gemini 3.1 & Local Fallback
+7. **07. Données & Preuves Sortie MVP** / MVP Release: Field Data & Real-World Validation
+8. **08. Écosystème Institutionnel & Synergies** / Partner Ecosystem & Governance
+9. **09. Éthique, Risques & Limites** / Risk Management & Operational Boundaries
+10. **10. Feuille de Route & Vision Régionale** / Roadmap & Regional ECOWAS Shield
 
 ---
 
@@ -39,13 +48,15 @@ python3 -m http.server 4350
 http://localhost:4350
 ```
 
-### Fonctionnalités interactives
+### Fonctionnalités interactives & Raccourcis clavier
+- **Bascule de langue (FR / EN)** : Touche `L` ou bouton 🌐 dans la barre de navigation.
 - **Défilement vertical immersif** avec animations synchronisées (`IntersectionObserver`).
-- **Barre de progression & compteur de lecture** en temps réel.
-- **Bouton Sommaire (T)** pour ouvrir la vue d'ensemble des 10 slides.
-- **Navigation clavier** : Touches `Flèche Bas` / `Flèche Haut` ou `Page Down` / `Page Up`.
-- **Mode Sombre / Clair** commutable à tout moment.
-- **Design 100% responsive** adapté aux écrans projecteurs, ordinateurs portables, tablettes et smartphones.
+- **Barre de progression & compteur de lecture** en temps réel (`01 / 10`).
+- **Plan global de la présentation** : Touche `O` ou bouton **Plan**.
+- **Mode Sombre / Clair** : Touche `D` ou bouton **Thème**.
+- **Mode Plein Écran** : Touche `F` ou bouton **Plein Écran**.
+- **Navigation clavier** : `Flèche Bas` / `Flèche Haut`, `Page Down` / `Page Up`, `Espace`, `Home` / `End`.
+- **Design 100% responsive** adapté aux projecteurs, PC, tablettes et smartphones.
 
 ---
 
@@ -54,4 +65,4 @@ http://localhost:4350
 - **Bleu Primaire (Protection & Institutionnel)** : `#2B99C7`
 - **Orange / Terracotta (Alerte & Chaleur humaine)** : `#E08B4E`
 - **Bleu Profond (Souveraineté)** : `#112338`
-- **Typographies** : Plus Jakarta Sans & Outfit (Google Fonts)
+- **Typographies** : Plus Jakarta Sans & Space Grotesk (Google Fonts)

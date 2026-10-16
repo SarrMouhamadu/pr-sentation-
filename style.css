@@ -178,6 +178,22 @@ body {
   color: var(--primary);
 }
 
+.lang-btn {
+  font-weight: 700;
+  border-color: rgba(43, 153, 199, 0.35);
+  background: var(--badge-bg);
+}
+
+.lang-btn .label {
+  display: inline-block;
+  min-width: 20px;
+  text-align: center;
+  color: var(--primary);
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: 0.04em;
+  font-weight: 800;
+}
+
 /* ========================================================
    VERTICAL PRESENTATION WRAPPER & SECTIONS
    ======================================================== */
