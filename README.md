@@ -8,7 +8,7 @@ Support de présentation officiel interactif pour la Conférence des Parties à 
 
 **XAM TE AAR** (« Savoir pour se Protéger » en wolof) est une plateforme numérique citoyenne et institutionnelle dédiée à la prévention, au signalement sécurisé et à la lutte contre la traite des personnes et l’exploitation au Sénégal et en Afrique de l’Ouest.
 
-Développée avec l'appui de **Mbarodi AI**, en concertation avec la **CNLTP** (Comité National de Lutte contre la Traite des Personnes), l'**UNODC** (Office des Nations Unies contre la drogue et le crime) et **Free The Slaves**.
+Développée avec l'appui de **Mbarodi AI**, en concertation avec la **CNLTP** (Comité National de Lutte contre la Traite des Personnes), l'**UNODC** (Office des Nations Unies contre la drogue et le crime), **Free The Slaves** et **Tether**.
 
 ---
 

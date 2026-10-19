@@ -166,11 +166,13 @@ const translations = {
     s8_c2_li1: "Application de la Loi 2005-06",
     s8_c2_li2: "Prise en charge régalienne des enquêtes judiciaires",
     s8_c2_li3: "Protection physique des victimes identifiées",
-    s8_c3_type: "Société Civile & Tech",
-    s8_c3_desc: "Synergie entre une ONG historique de terrain engagée pour l'éradication de l'esclavage moderne et un pôle d'ingénierie IA sénégalais pour le développement souverain.",
+    s8_c3_type: "Société Civile, Bailleurs & Tech",
+    s8_c3_title: "Free The Slaves, Tether & Mbarodi AI",
+    s8_c3_desc: "Synergie entre une ONG historique de terrain, un partenaire technologique et financier majeur, et un pôle d'ingénierie IA sénégalais pour le développement souverain.",
     s8_c3_li1: "Remontée des besoins réels des communautés",
-    s8_c3_li2: "Conception éthique et souveraineté logicielle",
+    s8_c3_li2: "Conception éthique, appui technologique & souveraineté logicielle",
     s8_c3_li3: "Accompagnement humain et psycho-social",
+    s8_tray_label: "Partenaires Stratégiques Réunis autour de XAM TE AAR :",
 
     // Slide 9
     s9_tag: "08. Responsabilité & Éthique",
@@ -406,11 +408,13 @@ const translations = {
     s8_c2_li1: "Enforcement of Senegalese Law 2005-06",
     s8_c2_li2: "Sovereign judicial investigation and prosecution",
     s8_c2_li3: "Physical protection and shelter for victims",
-    s8_c3_type: "Civil Society & Tech",
-    s8_c3_desc: "Synergy between an international NGO dedicated to eradicating modern slavery and a Senegalese AI engineering lab committed to sovereign technological solutions.",
+    s8_c3_type: "Civil Society, Philanthropy & Tech",
+    s8_c3_title: "Free The Slaves, Tether & Mbarodi AI",
+    s8_c3_desc: "Synergy between an international frontline human rights NGO, a major technological & philanthropic partner, and a Senegalese AI engineering lab committed to sovereign technological solutions.",
     s8_c3_li1: "Grassroots intelligence on community needs",
-    s8_c3_li2: "Ethical system design and software sovereignty",
+    s8_c3_li2: "Ethical system design, technology backing & software sovereignty",
     s8_c3_li3: "Direct psychosocial and trauma-informed support",
+    s8_tray_label: "Strategic Partners United Around XAM TE AAR:",
 
     // Slide 9
     s9_tag: "08. Responsibility & Ethics",

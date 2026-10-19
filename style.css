@@ -403,6 +403,35 @@ body {
   transform: scale(1.05);
 }
 
+.partner-logo.logo-tether {
+  background: #ffffff;
+  padding: 4px 10px;
+  border-radius: 8px;
+  height: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.partners-tray-secondary {
+  margin-top: 32px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.tray-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
 [data-theme="light"] .dark-only { display: none !important; }
 [data-theme="light"] .light-only { display: block !important; }
 [data-theme="dark"] .light-only { display: none !important; }
