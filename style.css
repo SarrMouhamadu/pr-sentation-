@@ -169,6 +169,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  text-decoration: none;
   transition: all 0.2s ease;
 }
 
@@ -1775,5 +1776,177 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* ========================================================
+   7. PRINT STYLES FOR PDF EXPORT (@media print)
+   ======================================================== */
+@media print {
+  @page {
+    size: 297mm 210mm; /* A4 Landscape */
+    margin: 0;
+  }
+
+  html, body {
+    background: #0B1726 !important;
+    color: #E2EEF4 !important;
+    width: 297mm !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 10.5pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide UI chrome */
+  .top-bar,
+  .side-nav-dock,
+  .floating-bottom-bar,
+  .overview-modal,
+  .scroll-down-prompt,
+  .nav-btn,
+  .float-btn,
+  .float-hint,
+  .pulse-dot {
+    display: none !important;
+  }
+
+  /* Force each slide to a standalone landscape page */
+  .presentation-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+  }
+
+  .slide {
+    width: 297mm !important;
+    height: 210mm !important;
+    min-height: 210mm !important;
+    max-height: 210mm !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    padding: 14mm 18mm !important;
+    margin: 0 !important;
+    background: #0B1726 !important;
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .slide-inner {
+    width: 100% !important;
+    max-width: 265mm !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Show all elements without scroll animation lag */
+  .slide .slide-header,
+  .slide .stat-card,
+  .slide .feature-card,
+  .slide .barrier-item,
+  .slide .pillar-box,
+  .slide .sec-item,
+  .slide .ai-box,
+  .slide .result-card,
+  .slide .partner-column,
+  .slide .risk-card,
+  .slide .timeline-step,
+  .slide .team-card,
+  .slide .dignity-banner,
+  .slide .quote-callout,
+  .slide .pwa-highlight,
+  .slide .lessons-learned-box,
+  .slide .final-pledge,
+  .slide .team-footer-strip,
+  .slide .partners-tray-secondary {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Backgrounds & borders for cards in print */
+  .stat-card,
+  .feature-card,
+  .barrier-item,
+  .pillar-box,
+  .sec-item,
+  .ai-box,
+  .result-card,
+  .partner-column,
+  .risk-card,
+  .timeline-step,
+  .team-card,
+  .final-pledge,
+  .team-footer-strip,
+  .partners-tray-secondary,
+  .lessons-learned-box,
+  .chat-demo-card {
+    background: #112338 !important;
+    border-color: rgba(76, 157, 189, 0.3) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    box-shadow: none !important;
+  }
+
+  .partner-logo,
+  .team-photo {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .light-only { display: none !important; }
+  .dark-only { display: block !important; }
+
+  /* Compact typography slightly for clean A4 printing */
+  h1.hero-title {
+    font-size: 2.6rem !important;
+    margin-bottom: 10px !important;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem !important;
+    margin-bottom: 22px !important;
+  }
+
+  .hero-stats-strip {
+    margin-bottom: 20px !important;
+  }
+
+  .slide-header h2 {
+    font-size: 1.6rem !important;
+    margin-bottom: 6px !important;
+  }
+
+  .slide-header p.lead {
+    font-size: 0.92rem !important;
+    margin-bottom: 14px !important;
+  }
+
+  .team-photo-wrapper {
+    height: 170px !important;
+  }
+
+  .team-grid {
+    gap: 14px !important;
+  }
+
+  .team-footer-strip {
+    margin-top: 14px !important;
+    padding: 10px 18px !important;
+  }
+
+  .partners-tray-secondary {
+    margin-top: 18px !important;
+    padding: 10px 18px !important;
   }
 }

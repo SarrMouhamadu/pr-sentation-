@@ -126,6 +126,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (overviewToggle) {
       overviewToggle.title = dict.overviewTitle || '';
     }
+    const pdfBtn = document.getElementById('pdfPrintBtn');
+    if (pdfBtn) {
+      pdfBtn.title = dict.pdfTitle || '';
+    }
     if (prevBtn) {
       prevBtn.title = lang === 'fr' ? 'Section précédente (↑)' : 'Previous section (↑)';
     }
@@ -279,6 +283,13 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleOverviewModal();
     } else if (e.key.toLowerCase() === 'l') {
       toggleLanguage();
+    } else if (e.key.toLowerCase() === 'p') {
+      const pdfBtn = document.getElementById('pdfPrintBtn');
+      if (pdfBtn) {
+        pdfBtn.click();
+      } else {
+        window.print();
+      }
     }
   });
 

@@ -9,9 +9,11 @@ const translations = {
     themeBtn: "Thème",
     fullscreenBtn: "Plein Écran",
     overviewBtn: "Plan",
+    pdfBtn: "PDF",
     themeTitle: "Basculer Mode Clair / Sombre (Touche D)",
     fullscreenTitle: "Mode Plein Écran (Touche F)",
     overviewTitle: "Plan de la présentation (Touche O)",
+    pdfTitle: "Télécharger la présentation en PDF (Touche P)",
     langToggleTitle: "Changer de langue / Switch Language (Touche L)",
     
     // Floating Nav & Modal
@@ -251,9 +253,11 @@ const translations = {
     themeBtn: "Theme",
     fullscreenBtn: "Fullscreen",
     overviewBtn: "Outline",
+    pdfBtn: "PDF",
     themeTitle: "Toggle Dark / Light Mode (Key D)",
     fullscreenTitle: "Toggle Fullscreen Mode (Key F)",
     overviewTitle: "Presentation Outline (Key O)",
+    pdfTitle: "Download presentation as PDF (Key P)",
     langToggleTitle: "Switch Language / Changer de langue (Key L)",
     
     // Floating Nav & Modal
